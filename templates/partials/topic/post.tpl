@@ -97,6 +97,16 @@
 		<a component="post/reply" href="#" class="btn-ghost-sm {{{ if !privileges.topics:reply }}}hidden{{{ end }}}" title="[[topic:reply]]"><i class="fa fa-fw fa-reply text-primary"></i></a>
 		<a component="post/quote" href="#" class="btn-ghost-sm {{{ if !privileges.topics:reply }}}hidden{{{ end }}}" title="[[topic:quote]]"><i class="fa fa-fw fa-quote-right text-primary"></i></a>
 
+  		{{#if canMarkAsSolved}} 
+   		<button class="mark-as-solved" onclick="markAsSolved('{{topic.tid}}', '{{post.pid}}')">Mark as Solved</button>
+		{{/if}}
+
+		{{#if solved}}
+   		<div class="solved-label">
+       	<i class="fa fa-check-circle"></i> Solved
+   		</div>
+		{{/if}}
+
 		{{{ if !reputation:disabled }}}
 		<div class="d-flex votes align-items-center">
 			<a component="post/upvote" href="#" class="btn-ghost-sm{{{ if posts.upvoted }}} upvoted{{{ end }}}" title="[[topic:upvote-post]]">

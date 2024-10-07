@@ -125,6 +125,24 @@ body.template-topic {
 						opacity: 1;
 					}
 				}
+
+				.mark-as-solved {
+					background-color: transparent;  // No background color by default
+					border: 5px solid #28a745;      // Thinner border
+					color: #28a745;
+					padding: 3px 2px;               // Smaller padding
+					border-radius: 10px;             // Slightly rounded corners
+					font-size: 12px;                // Smaller font size
+					font-weight: 600;               // Bold for emphasis
+					cursor: pointer;                // Add pointer cursor to indicate it's clickable
+					transition: background-color 0.3s ease, color 0.3s ease;
+				}
+				
+				.mark-as-solved:hover {
+					background-color: #28a745;      // Green background on hover
+					color: white;                   // White text on hover
+				}
+				
 				[component="post/actions"]:focus-within {
 					opacity: 1;
 				}
