@@ -13,11 +13,17 @@
 			<textarea rows="4" name="content" component="topic/quickreply/text" class="form-control mousetrap" placeholder="[[modules:composer.textarea.placeholder]]"></textarea>
 			<div class="imagedrop"><div>[[topic:composer.drag-and-drop-images]]</div></div>
 		</div>
+		<div class="form-group">
+			<label for="replyAt">Reply at specific date and time</label>
+			<input type="datetime-local" id="replyAt" name="replyAt" class="form-control">
+		</div>
 		<div>
 			<div class="d-flex justify-content-end gap-2">
 				<button type="submit" component="topic/quickreply/expand" class="btn-ghost-sm border" title="[[topic:open-composer]]"><i class="fa fa-expand"></i></button>
 				<button type="submit" component="topic/quickreply/button" class="btn btn-sm btn-primary">[[topic:post-quick-reply]]</button>
 			</div>
+
+			
 		</div>
 	</form>
 	<form class="d-none" component="topic/quickreply/upload" method="post" enctype="multipart/form-data">
