@@ -25,7 +25,7 @@
 			</div>
 
 			<a class="fw-bold text-nowrap" href="{{{ if ./user.userslug }}}{config.relative_path}/user/{./user.userslug}{{{ else }}}#{{{ end }}}" data-username="{posts.user.username}" data-uid="{posts.user.uid}">{posts.user.displayname}</a>
-
+			<span class="badge bg-info text-white ms-2">{posts.user.role}</span>
 			{{{ each posts.user.selectedGroups }}}
 			{{{ if posts.user.selectedGroups.slug }}}
 			<!-- IMPORT partials/groups/badge.tpl -->
