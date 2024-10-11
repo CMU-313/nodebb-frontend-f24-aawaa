@@ -22,6 +22,21 @@
 </li>
 {{{ end }}}
 
+<!-- Endorsement compoenent of dropdown starts here -->
+{{{ if posts.endorse }}}
+<li>
+	<a class="dropdown-item rounded-1 d-flex align-items-center gap-2" component="post/endorse" role="menuitem" href="#">
+		<span class="menu-icon"><i class="fa fa-fw text-secondary fas fa-star""></i></span> Un-Endorse
+	</a>
+</li>
+{{{ else }}}
+<li>
+	<a class="dropdown-item rounded-1 d-flex align-items-center gap-2" component="post/endorse" role="menuitem" href="#">
+		<span class="menu-icon"><i class="fa fa-fw text-secondary far fa-star"></i></span> Endorse
+	</a>
+</li>
+{{{ end }}}
+
 {{{ if posts.display_move_tools }}}
 <li>
 	<a class="dropdown-item rounded-1 d-flex align-items-center gap-2" component="post/move" role="menuitem" href="#">
