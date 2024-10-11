@@ -17,6 +17,15 @@
 			<label for="replyAt">Reply at specific date and time</label>
 			<input type="datetime-local" id="replyAt" name="replyAt" class="form-control">
 		</div>
+
+		<!-- Checkbox for Anonymous Posting -->
+			<div class="form-check">
+				<input class="form-check-input" type="checkbox" component="topic/quickreply/anonymousCheckbox">
+				<label class="form-check-label" for="anonymousCheckbox">
+					Submit as Anonymous
+				</label>
+			</div>
+
 		<div>
 			<div class="d-flex justify-content-end gap-2">
 				<button type="submit" component="topic/quickreply/expand" class="btn-ghost-sm border" title="[[topic:open-composer]]"><i class="fa fa-expand"></i></button>
