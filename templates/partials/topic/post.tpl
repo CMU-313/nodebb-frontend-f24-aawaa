@@ -54,6 +54,9 @@
 			</div>
 			{{{ end }}}
 			<div class="d-flex align-items-center gap-1 flex-grow-1 justify-content-end">
+				{{{if posts.endorse}}}
+					<span class="menu-icon"><i class="fa fa-fw text-secondary fas fa-star"></i></span>
+				{{{end}}}
 				<span class="bookmarked opacity-0 text-primary"><i class="fa fa-bookmark-o"></i></span>
 				<a href="{config.relative_path}/post/{./pid}" class="post-index text-muted d-none d-md-inline">#{increment(./index, "1")}</a>
 			</div>
